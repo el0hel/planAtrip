@@ -1,0 +1,153 @@
+.form-page {
+    display: flex;
+    min-height: 100vh; 
+    background-color: #D2E0FB;  
+  }
+  
+  .left-side {
+    width: 30%;
+    background-color: #FEF9D9;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .left-side h1 {
+    color: #465566;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .left-side p {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .left-side img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .right-side {
+    width: 70%;
+    max-height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }  
+  
+  .right-side h2 {
+    color: #465566;
+    margin-bottom: 20px;
+  }
+  
+  .right-side form {
+    width: 100%;
+    max-width: 400px;
+    padding-bottom: 20px;
+  }
+  
+    .right-side input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;  
+      background-color: #fff;  
+  }
+  
+  .right-side button {
+    width: 100%;
+    padding: 12px;
+    background-color: #465566;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .right-side button:hover {
+    background-color: #5f7187;
+  }
+
+.error-message {
+  color: #d8000c; 
+  background-color: #ffbaba; 
+  padding: 10px; 
+  border-radius: 5px; 
+  margin-top: 1px; 
+  margin-bottom: 10px;
+}
+
+ .success-message {
+  color: #100e03; 
+  background-color: #FEF9D9; 
+  padding: 10px; 
+  border-radius: 5px; 
+  margin-top: 1px; 
+  margin-bottom: 10px;
+}
+
+.action-link a {
+  color: #465566;  
+  font-size: 1rem; 
+  text-decoration: none; 
+  font-weight: 500;  
+}
+
+.action-link a:hover {
+  color: #5f7187;  
+  text-decoration: underline; 
+}
+  
+/* responsive design */
+@media (max-width: 768px) {
+  .form-page {
+    flex-direction: column;  
+  }
+
+  .left-side {
+    width: 100%;  
+    padding: 15px; 
+    text-align: center;
+  }
+
+  .right-side {
+    width: 100%;  
+    padding: 10px;  
+    align-items: flex-start;  
+    overflow-y: auto;
+  }
+
+  .left-side h1 {
+    font-size: 1.5rem;  
+  }
+
+  .left-side p {
+    font-size: 1rem;  
+  }
+  
+  .right-side input, .right-side button {
+    font-size: 0.9rem;  
+    padding: 10px;
+  }
+
+  .right-side button {
+    padding: 12px;
+  }
+
+  .right-side form {
+    max-width: 100%; 
+  }
+
+  .action-link a {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #465566;
+  }
+  
+  .my-trips-page {
+    padding: 20px;
+    max-height: 100vh; 
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+    
+  .trips-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .trips-section {
+    flex: 1;
+    max-width: 45%;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+  }
+  
+  .trips-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 20px; 
+  }
+  
+  .trips-header h2 {
+    margin: 0; 
+  }
+
+  
+  .add-trip-button {
+    font-size: 250%;
+    padding: 0px 10px;
+    background-color: #465566;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+  .add-trip-button:hover {
+    background-color: #5f7187;
+  }
+
+  .error-message {
+    color: #d8000c; 
+    background-color: #ffbaba; 
+    padding: 10px; 
+    border-radius: 5px; 
+    margin-top: 1px; 
+    margin-bottom: 10px;
+  }
+
+  .undo-delete-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+  
+  
+  .undo-delete-button {
+    padding: 10px 15px;
+    background-color: #465566; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .undo-delete-button:hover {
+    background-color: #5f7187;
+  }
+  
+
